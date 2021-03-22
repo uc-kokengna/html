@@ -1,0 +1,501 @@
+header, main, footer, figure, figcaption { display: block; }
+* { box-sizing: border-box; }
+
+
+/*edit wrapper!*/
+/*get rid of min-width and set width to px to stop text jump when resize*/
+#wrapper
+{
+	margin: auto;
+		/*height px adjusts height of content, must make width bigger than height*/
+	 min-width: 1200px; max-width: 1600px; /* set width to 100%, get rid of max-width and keep min-width for full size content viewport*/
+	background-color: #f9faff; 
+	/*box-shadow: 10px 10px 10px #333333; /* horiz. vert. blur*/
+}
+
+body { 
+	margin-bottom: auto; 
+	margin-top: auto;
+	background-color: #585F73;  
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: scroll ;
+	
+	}
+
+
+header 
+{ 
+	background-color: #44495C;
+	text-shadow: 4px 4px 3px #666;
+	color: #F5F5F5;
+	padding-top: 10px;
+text-align: center;
+	/*padding: 20px 10px 10px 4em;*/
+	background-image: url(images/keyboard.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 20px;
+	height: 135px;
+	background-size: cover;
+}
+header h1 { margin-bottom: 0; }
+
+ span 
+{
+	font-size: .80em;
+              font-style: italic;
+}
+
+/*CONFIGS DROP DOWN NAV BAR*/
+
+
+.navbar 
+{
+	font-weight: bold; 
+    background-color: #BA9A72;
+    font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	/*font-size: 1.0em; resize font. can effect resizing*/
+}
+.navbar a
+{
+	display: inline-block; 
+	font-size:17px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	padding: 0 7em;
+	margin: 0 5em;
+}
+.dropdown {
+   display: inline-block; 
+}
+.dropdown .dropbtn 
+{
+    font-size: inherit;   
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+	padding: 10px;
+    margin: 0 auto;
+	font-weight: inherit;
+	
+}
+.navbar a:visited{
+	color: #2f66bc;
+}
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+   color: #A26100; border:  #333333;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    color: black;
+    text-decoration: none;
+    display: block;
+	padding: 5px;
+    margin: 5px;
+	text-align:center;
+	font-size:16px;
+	}
+	
+.dropdown-content a:hover
+ {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+/*keep -webkit-transform for other browsers support
+transform IE, webkit chrome/safari, moz firefox*/
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+	-moz-transform:rotate(45deg);
+}
+header, span{
+	overflow: hidden;
+}
+main 
+{ 
+	padding: 3em 5em 8em 5em; /* bottom padding determines length of web page*/
+	display: block; 
+	margin-bottom: auto;/*change this to alter body length*/
+}
+main span{
+	font-size: 16px;
+}
+
+/**************SECTION and ASIDE****************/
+aside { float: left;
+        width: 50em;
+		background-color: #eaeaea;
+		padding: 1em;
+		font-size: 14px;
+		box-shadow: 5px 5px 5px #333333;
+		position: relative;
+		top: -20px;
+		margin-right: 20px;
+		
+}
+
+/*------------FIGURE, IMAGE,CAPTION-------*/
+
+
+figure
+{ 
+display: block;
+float: right; 
+overflow: hidden; 
+padding-left: 1em; 
+margin:1em;
+padding-bottom: 5px;
+width:auto;
+
+}
+img { 
+margin: 1em 0;
+display:block;
+	max-width:100%;
+	height: auto;
+	border-radius: 10px;
+	
+}
+
+figcaption{
+	margin: 1em;
+	font-weight: bold;
+}
+ 
+ .creator{
+	 font-size: 12px;
+ }
+
+
+/*DL CONFIG*/
+dd {
+	margin: 1em 0;
+	overflow:hidden;
+	}
+dt{
+	font-size: 18px;
+		overflow:hidden;
+
+} 
+
+
+figcaption
+{
+	display:block;
+	text-align: center; 
+	font-size: 14px;
+	font-style: italic; 
+	margin-bottom: 5px;
+	padding-bottom:10px;
+}
+
+/*.motherboard { float: right; margin: 1em 1em 0 3em; width:390px; height: 659px; 
+background-image: url(motherboard.jpg); background-repeat: no-repeat; border-radius: 10px;}*/
+
+/*------------CLASSES AND IDS----------*/
+#video {
+	float: right;
+	margin-left: 10px; 
+	overflow:hidden;
+	max-height:529px;
+		max-width:680px;
+	
+}
+.gpu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.storage {
+	margin-bottom:9em;
+}
+.space {
+	margin-left: 2.1em; 
+}
+
+/*-------------index Table list-----------------*/
+#table table { 
+        border: 3px solid ; 
+		max-width: 100%; 
+		height:auto;
+		border-spacing: 0;
+		
+}
+#table td, th { 
+padding: 3px; 
+         font-family: Arial, sans-serif;
+         border-style: none; 
+}
+#table caption { font-family: Verdana, sans-serif; 
+          font-weight: bold;
+		  font-size: 1em; 
+		  padding-bottom: 5px; 
+}
+#table tr:nth-of-type(even) { background-color:#eaeaea; }
+#table tr:first-of-type { background-color: blue;
+                   color: #eaeaea; }
+				   
+/******************************CPU TABLE**********************/		   
+	#cputable table{ 
+	margin-top: 10px;
+ border: 2px solid ; 
+		width: 500px; 
+		border-spacing: 0;
+	}	
+	#cputable caption { 
+	font-family: Verdana, sans-serif; 
+          font-weight: bold;
+		  font-size: 1.1em; 
+		  padding-bottom: 5px; 
+}
+#cputable th {
+	font-size: 20px;
+}
+
+#cputable td, th {  
+padding: 3px; 
+text-align: center;
+         font-family: Arial, sans-serif;
+         border-style: none; 
+}
+
+#cputable tr:nth-of-type(even) { background-color:#eaeaea; }
+#cputable tr:first-of-type { background-color: blue;
+                   color: #eaeaea; }
+
+/*	----------------------*/
+
+/*Contact Form*/
+form {
+	   font-family: Arial, sans-serif;
+        width: 500px; padding: 10px;
+		}
+label { display: block;
+		float: left; 
+		clear: left;
+	    width: 100px; 
+	    text-align: right; 
+	    padding-right: 10px;
+	    margin-top: 10px;
+		}
+input, textarea { 
+		display: block;
+		margin-top: 10px;
+width:200px;		
+		 }
+input[type="submit"] {
+	margin-left: 100px;
+	}
+	
+	.newnav h4 {
+	text-align: center;
+	font-style: italic; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-decoration: underline;
+}
+.newnav ul{
+	font-size:14px;
+	margin:auto;
+	text-align: center;
+	list-style-type: none
+
+}
+.newnav a{
+	
+font-family: Arial, Helvetica, sans-serif;
+margin-right: 6px;
+margin-left:6px;
+margin-bottom:4px;
+text-decoration: none;
+display:inline-block;
+color:black;
+font-weight: bold; 
+font-style: italic; 
+
+}
+.newnav a:visited{
+	color: #2f66bc;
+}
+/****************************************/
+
+footer { 
+	background-color: #BA9A72; 
+	font-size: small;
+	font-style: italic;
+	text-align: center; 
+	padding: 1em; 
+	}
+	
+	
+	
+	/*config smartphone display*/
+@media only screen and (max-width: 37.5em) {
+	body 
+	{ 
+		margin: 0; padding: 0;
+	}
+	#wrapper 
+	{
+		min-width: auto; 
+		width: auto; 
+		margin: auto; 
+		padding: 0;
+	}
+	h1 { 
+	font-size:26px;
+	margin-top:1em;
+}
+
+	.navbar a  /*MUST KEEP*/
+	{ display:block;
+		padding: 3px 1em ;
+		margin: 0 1em;
+		font-size:16px;
+	}
+	
+	.dropdown-content a 
+{
+    color: black;
+    text-decoration: none;
+    display: block;
+	padding: 3px;
+    margin: 3px;
+	text-align:inherit;
+	font-size:inherit;
+	}
+	
+	.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+main 
+	{
+		padding: 0 1em 5em 1em;
+		margin: 0;
+		font-size: 90%; 
+		clear: both;
+	}
+h2, h3
+{
+		text-align: center;
+		margin-top:2em;
+	}
+figure
+{
+		margin-top:-1em;
+}
+p,dl 
+	{
+		padding: 0 2em ; 
+		
+	}
+
+ aside
+{ 
+	width: auto;
+}
+td, th 
+{ 
+	padding: 1px; 
+}
+#video
+{
+		margin-right: -14px;
+		max-height:529px;
+		max-width:680px;
+	
+		
+	}
+iframe
+	{
+		
+		width:auto; height: auto;
+	}
+	
+#cputable table
+{ 
+	margin-left:auto;
+	margin-right: auto;
+	width:auto;
+}
+#table table
+{
+	height: auto;
+	width:auto;
+}
+form
+	{
+	margin-left:auto;
+	margin-right: auto;
+	height: auto;
+	width:auto;
+	}
+	input, textarea { 
+		display: block;
+		margin-top: 10px;
+width:auto;		
+		 }
+
+.newnav ul{
+
+	margin-left: -1.5em;
+}
+
+		 
+footer
+{
+		 overflow:hidden;
+	}
+
+	
+}
+
+@media only screen and (max-width: 60em)
+{
+	
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

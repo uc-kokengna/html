@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Components Made Easy</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon"> 		
+		<link rel="stylesheet" href="computer.css">
+    </head>
+	
+	<body>
+	<div id="wrapper">
+	
+<header>
+	<h1>Build Your Dream Machine</h1>
+	<span>a simple guide to select computer parts</span>
+</header>
+
+
+<div class="navbar">
+  <a href="index.html">Home Page</a>
+  <div class="dropdown">
+    <button class="dropbtn">Components
+	<i class="arrow down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="motherboard.html">Motherboard</a>
+      <a href="cpu.html">Processor</a>
+      <a href="gpu.html">Graphics</a>
+	  <a href="ram.html">Memory</a>
+      <a href="psu.html">Battery</a>
+      <a href="storage.html">Storage</a>
+ <a href="case.html">Computer Case</a>    </div>
+  </div> 
+<a href="sites.html">More Information</a>
+ </div>
+ 
+<main>
+<img src="images/gpu_hero.jpg" alt="EVGA NVIDIA GTX 970 SC ACX 2.0" width="1100" height="556" class="gpu">
+		
+	
+
+		<h2>Graphics Card (Graphics Processing Unit or GPU)</h2> 
+			<p>Renders 3D images, animations and video for computer screen.
+			A powerful GPU produces higher resolution, faster and smoother visuals in games, video-editing and movies. 
+			There are two seperate categories of GPUs; integrated and dedicated (discrete).
+			Integrated cards are graphics cards built into the CPU. 
+			Offering underpowered rendering suited more for simple and dedicated to web browsing, streaming videos, minimal photo editing and light gaming. 
+			Dedicated, or discrete, graphics are designed for demanding workloads such as high detailed games, crypto mining, photo and video editing.
+			All discrete graphics cards connect via PCIE x16 on motherboard producing optimal performance, but can be installed on lower bandwith PCIEs (e.g. PCIE x4). 
+			Above is an example of a high-performance graphics cards. Here are its specifications: NVIDIA GTX 970 SC ACX 2.0 Base Clock: 1165 MHz / Boost Clock: 1317 MHz
+Memory Clock: 7010 MHz Effective; Memory Detail: 4096MB GDDR.
+			  </p>
+			  
+			
+			<dl>
+			<dt><strong>Nvidia and AMD</strong></dt>
+					<dd>These two companies are the top designers of graphics cards.
+					AMD creates Radeon RX series. Whereas, Nvidia produces the GTX and RTX series. 
+					Both companies create a chipset, a chip on graphics card that performs calculations to render and display images,
+						as well as the physical design and specifications of the GPU.
+					Afterwards, the design is sent to partnered gpu manufacturers, e.g. Asus, EVGA, Gigabyte and MSI. 
+					Manufacturers can then modify the GPU, its cooling efficiency, core clock, length and boost clock.
+					</dd>
+				<dt><strong>Core Clock:</strong></dt>
+					<dd>The actual speed which the graphics processor on a video card operates.
+					Higher core clock speeds means better performance.
+					Core clock speed can be changed via third-party applications to gain a performance boost, called overclocking, which will require better system cooling
+						and a more powerful computer battery(PSU).
+					Core clock is measured in megahertz (MHz), e.g. Core Clock 1708 MHz.
+					</dd>
+				<dt><strong>Boost Clock</strong></dt> 
+					<dd>Dynamic speed adjustment increasing clock speeds until the graphics card hits its predetermined Power Target.
+					Real-time changes will be applied to the core speed depending on the graphic cards current running voltage and temperature. 
+					This is mainly applied when running high performance applications and can easily be overclocked.
+					Boost clock is measured in megahertz (MHz), e.g. Boost Clock 1847 MHz.
+					</dd>
+					<dt><strong>Video RAM:</strong></dt>
+					<dd>"Video Random Access Memory" (VRAM or Frame Buffer). Memory used to store image data that the computer displays; acts as a buffer between the CPU and the video card.
+					Modern graphics cards use graphics double data rate type five(GDDR5); I shortened the actual definition.
+					The more vRAM a card has, the more complex textures or 3D meshes it can load.
+					The higher the resolution of the image you’re rendering, the more VRAM is required. 
+					If the texture and images overload your GPU’s VRAM, the overflow dumps into system RAM, negatively impacting performance.
+					Bottom line, more VRAM means higher quality resolution with less performance impact.
+					VRAM is labled as "Memory clock" when overclocking.
+					</dd>
+				<dt><strong>Thermal and Power:</strong></dt> 
+					<dd>All graphic cards are designed for a specified max temperature, measured in celcius, and system power, wattage.
+					It's reccomended to buy a system case that supports great air cooling and at least a moderately powerful battery.
+					Make sure your system power supply meets the reccomendations (wattage, volts, and amps) before purchasing your graphics card. </dd>
+					<dt><strong>Nvidia SLI and AMD CROSSFIRE</strong></dt>
+					<dd>Two similar, but seperate, technologies allowing users to pair two or more graphics cards together in one system to achieve higher graphics performance. 
+							Though, you will notice a graphical performance increase, the technology does have it's limitations and doubling the amount of graphics cards in your system won’t always to desired performance. 
+								Not all games support paired GPUs, so expect some performance inconsistencies.
+									The biggest challenge to achieve SLI/CROSSFIRE is the computer will need to be powerful enough to support the extra demand of having mulitple graphics cards, e.g. powerful cpu,
+					extra cooling, and a strong efficient battery.
+										To physically connect multiple GPUs, a seperate connector "Bridge Connector" is needed.  The Bridge Connector connects via "nub" on top of a graphics card; the more nubs a gpu has the more gpus can be linked together.
+					</dd>
+				<dt><strong>Wattage and Amps:</strong></dt> 
+				<dd>Amount of wattage and amps to efficiently power a graphics card  via +12V rail (graphics card power connector).
+				The minimum amount is labled on the side of the graphics cards box, manufacture and suppliers site.
+				An example of the requirements, "400 watt or greater power supply with a minimum of 20 amps on the +12 volt rail".
+				Essentially, wattage is the power requirement it takes to turn on the GPU and Amps is the amount it takes for the GPU to stay on.
+				If your power supply is inefficient, you will need to downgrade the graphics card or purchase a new power unit.
+			</dl>
+</main>
+			<div class ="newnav">
+			<h4> Site Navigation </h4>
+			<ul>
+				<li>
+				<a href="index.html">Home Page</a>		
+				<a href="motherboard.html">Motherboard</a>	
+				<a href="gpu.html">Graphics</a>
+					<a href="ram.html">Memory</a>   
+				<a href="cpu.html">Processor</a>
+				<a href="psu.html">Battery</a>
+				<a href="storage.html">Storage</a>
+				<a href="case.html">Computer Case</a>
+				<a href="sites.html">More Information</a>
+				</li>
+		</ul>
+  </div>
+	<footer>
+		This website was constructed and written by Nicholas Kokenge.  <br>
+		Contact via Email <a href="mailto:kokengna@mail.uc.edu">kokengna@mail.uc.edu</a>
+	</footer>
+   </div>
+  </body>
+</html>
